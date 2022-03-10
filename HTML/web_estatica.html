@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Estatica</title>
+        <style>
+           article{
+               margin: 0 50px;
+           }
+           h2{
+               margin:  10px 50px;
+           }
+
+           .center-img{
+               margin: 0 auto;
+               display: block;
+           }
+
+           div{
+               margin-top: 20px;
+           }
+
+           li{
+               font-size: 20px;
+           }
+
+           .rrss{
+               text-align: center;
+               margin-top: 20px;
+           }
+        </style>
+        <script>
+            function alerta(){
+                var opcion = confirm("Te gustan la programacion??");
+
+                if(opcion){
+                    return true;
+                }
+
+                return false;
+            }
+            function cargar(){
+                if (alerta()){
+                    alert("Bienvenido")
+                }else{
+                    alert("Esta web no es para ti, lo siento")
+                    window.open("/")
+                }
+            }
+
+        </script>
+    </head>
+
+    <body onload="cargar();"> 
+
+        
+        <!--preungat como subir el header hasta arriba (se queda un "margin" arriba)-->
+        <header style="background-color: antiquewhite">
+            <h1 style="text-align: center;">Lenguajes de Programación</h1>
+        </header>
+
+        <main>
+            <section>
+                <h2>Python</h2>
+                <article>Python es un lenguaje de programación 
+                    interpretado cuya filosofía hace hincapié en la legibilidad de su código.​ 
+                    Se trata de un lenguaje de programación multiparadigma, ya que soporta parcialmente la 
+                    orientación a objetos, programación imperativa y, en menor medida, programación funcional.
+                </article>
+                <div >
+                    <img class="center-img" style="width: 200px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png">
+                </div>
+            </section>
+
+            <section>
+                <h2>JavaScript</h2>
+                <article>
+                    JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. S
+                    e define como orientado a objetos, 
+                    ​ basado en prototipos, imperativo, débilmente tipado y dinámico.
+                </article>
+                <div>
+                    <img class="center-img" style="width: 200px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/640px-Unofficial_JavaScript_logo_2.svg.png" alt="">
+                </div>
+            </section>
+
+            <section>
+                <h2>Más ejemplos:</h2>
+                <ul style="margin-left: 50px;">
+                    <li>Java</li>
+                    <li>SQL</li>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>.NET</li>
+                </ul>
+            </section>
+
+            <!--Preguntar como bajar el footer hasta abajo-->
+            <footer style="background-color: antiquewhite;">
+                <h3 style="text-align: center;">Recuerda seguirnos en nuestras redes sociales</h3>
+                <div class="rrss">
+                    <a style="margin-right: 5px;" href="instagram.com">Instagram</a>
+                    <a style="margin-left: 5px;" href="twitter.com">Twitter</a>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>
